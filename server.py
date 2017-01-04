@@ -14,7 +14,6 @@ random_value = randint(0, 10000)
 def index():
     global last_update
     global random_value
-    print(random_value)
     return render_template('index.html', last_update=last_update, random=random_value)
 
 @app.route("/update")
